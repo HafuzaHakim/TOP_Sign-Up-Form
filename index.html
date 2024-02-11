@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans:wght@400;500;700&family=Roboto&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-container">
+        <div class="banner">
+          <div class="img-container">
+            <img src="/Asset/logo.svg" alt="Ramen Logo" />
+          </div>
+
+          <h1 class="main-title">RAMEN TYCOON</h1>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="intro">
+          <p>
+            This is not a real service! Embark on an adventure across Japan
+            bustling streets by managing your own ramen stall along with your
+            trusty cat assistant. Sign-up now to get started.
+          </p>
+          <p>Better start soon before the cat eat the ramen.</p>
+        </div>
+        <form action="#" method="post">
+          <div class="input">
+            <h2>Let's do this!</h2>
+            <div class="user-input">
+              <div class="row">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name=First_Name" required placeholder="Najib"/>
+              </div>
+              <div class="row">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="Last_Name" required placeholder="Razak"/>
+              </div>
+              <div class="row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required placeholder="jibby@1mdb.com"/>
+              </div>
+              <div class="row">
+                <label for="p-num">Phone Number</label>
+                <input type="tel" id="p-num" name="Phone_Number" required placeholder="0123456789"/>
+              </div>
+              <div class="row">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="Password" required />
+              </div>
+              <div class="row">
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="password" id="confirm-pwd" required />
+              </div>
+            </div>
+          </div>
+          <div class="submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<span>Log In</span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

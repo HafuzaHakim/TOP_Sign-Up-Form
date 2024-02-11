@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left-container,
+.right-container {
+  height: 100%;
+  font-family: "Pixelify Sans";
+}
+
+.left-container {
+  flex: 1 1 40%;
+  background: url(/Asset/background.png) no-repeat;
+  background-position: 12% 0%;
+  position: relative;
+}
+
+.left-container > .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 25%;
+}
+
+.left-container .img-container {
+  max-width: 25%;
+}
+
+.left-container img {
+  width: 100%;
+}
+
+.left-container h1 {
+  font-size: 2.5rem;
+}
+
+.right-container {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.right-container .intro {
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  background-color: #684936;
+}
+
+.right-container form {
+  flex: 1 1 66%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container .input {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.right-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.right-container .submit {
+  flex: 1 1 50%;
+  padding: 1.45em;
+  background-color: #684936;
+}
+
+.right-container .user-input {
+  font-size: 1rem;
+  flex: 1 1 auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.right-container .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container .submit {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.right-container button {
+  font-family: "Pixelify Sans";
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(170, 153, 57);
+}
+
+.right-container button:hover {
+  background-color: rgba(170, 153, 57, 0.9);
+}
+
+.right-container input {
+  height: 60%;
+  width: 100%;
+  padding: 0.5rem;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  outline: none;
+}
+
+.right-container input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.right-container label::after {
+  content: "*";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.right-container input:focus{
+    border:1px solid rgb(52, 89, 212);
+}
